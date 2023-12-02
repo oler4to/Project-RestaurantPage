@@ -1,7 +1,7 @@
-import TableImage from './table.jpg';
-import WaitressImage from './waiteress.jpg';
+import TableImage from './img/table.jpg';
+import WaitressImage from './img/waitress.jpg';
 
-function homedetails(a) {
+function home(a) {
   const header = document.createElement('span');
         header.setAttribute('class', 'tabHead');
         header.textContent = 'Home'
@@ -34,4 +34,4 @@ function homedetails(a) {
     a.appendChild(para3);
 }
 
-export default homedetails
+export default home

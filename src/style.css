@@ -1,4 +1,6 @@
 #head {
+  padding: 5px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,17 +8,40 @@
   border-bottom: 1px solid;
 }
 
-.tabs {
+#navtabs {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  
 }
 
-.tabs span {
+#navtabs span {
   padding: 5px;
-  background-color: lavender;
 }
+
+#head #restaurant-name {
+  font-size: 2rem;
+}
+
+.tabHead, #restaurant-name {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+#home {
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  gap: 5px;
+  
+  font-size: 0.7rem;
+}
+
+#home .image {
+  width: 100%;
+}
+
 
 #menu .items {
   display: flex;

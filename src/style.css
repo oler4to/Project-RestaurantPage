@@ -93,3 +93,56 @@
   font-size: 1rem;
 }
 
+#contact {
+  padding: 20px;
+  
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 100px;
+}
+
+.times {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.times .t-slot {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  padding: 5px;
+  
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+  border: 1px solid ;
+}
+
+.contacts span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contacts .c-call {
+  grid-column: 1/3;
+}
+
+.contacts .c-email {
+  grid-column: 3/5;
+}
+
+.contacts .c-social {
+  width: 3.5em;
+}

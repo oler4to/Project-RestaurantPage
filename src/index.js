@@ -1,5 +1,6 @@
 import './style.css'
-import homedetails from './home.js'
+import home from './home.js'
+import menu from './menu.js'
 
 const restaurantPage = document.getElementById('restaurant-page');
 
@@ -41,8 +42,18 @@ function createHome(){
   const hometab = document.createElement('section');
         hometab.setAttribute('id', 'home');
     
-  homedetails(hometab);
+  home(hometab);
   restaurantPage.appendChild(hometab);
 }
 
 createHome()
+
+function createMenu(){
+  const menutab = document.createElement('section');
+        menutab.setAttribute('id', 'menu');
+  
+  menu(menutab);
+  restaurantPage.appendChild(menutab)
+}
+
+createMenu()

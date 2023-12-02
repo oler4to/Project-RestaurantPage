@@ -18,3 +18,31 @@
   background-color: lavender;
 }
 
+#menu .items {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 15px;
+}
+
+.items div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  
+  border: 1px solid ;
+}
+
+.items div span {
+  border: 1px solid ;
+}
+
+.items .left .img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.items .right .img {
+  grid-column: 2/2;
+  grid-row: 1/4;
+}

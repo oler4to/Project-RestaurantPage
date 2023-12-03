@@ -14,56 +14,56 @@ const menuItems = [
     picsrc: item1,
     name: "Seared Scallops with Citrus Risotto",
     info: "Pan-seared jumbo scallops served atop creamy citrus-infused risotto, garnished with fresh herbs.",
-    price: "R415",
+    price: "R215",
     side: "left"
   },
   {
     picsrc: item2,
     name: "Miso-Glazed Chilean Sea Bass",
     info: "Grilled Chilean sea bass glazed with savory miso, accompanied by a medley of roasted seasonal vegetables.",
-    price: "R504",
+    price: "R104",
     side: "right"
   },
   {
     picsrc: item3,
     name: "Truffle Mushroom Ravioli",
     info: "Handcrafted ravioli stuffed with wild mushrooms and drizzled with a luxurious truffle-infused cream sauce, finished with shaved parmesan.",
-    price: "R299",
+    price: "R99",
     side: "left"
   },
   {
     picsrc: item4,
     name: "Moroccan Spiced Lamb Tagine",
     info: "Tender braised lamb infused with Moroccan spices, served with couscous and a medley of roasted vegetables.",
-    price: "R429",
+    price: "R129",
     side: "right"
   },
   {
     picsrc: item5,
     name: "Szechuan Crispy Tofu Stir-Fry",
     info: "Crispy tofu cubes tossed in a zesty Szechuan sauce with colorful bell peppers, snow peas, and served over fragrant jasmine rice.",
-    price: "R264",
+    price: "R164",
     side: "left"
   },
   {
     picsrc: item6,
     name: "Prime Ribeye Steak",
-    info: "A succulent grilled ribeye steak seasoned to perfection, accompanied by garlic mashed potatoes and sautéed spinach.",
-    price: "R525",
+    info: "A succulent grilled ribeye steak seasoned to perfection, accompanied by garlic mashed potatoes and sauteed spinach.",
+    price: "R225",
     side: "right"
   },
   {
     picsrc: item7,
     name: "Gourmet Veggie Pizza",
     info: "A thin-crust pizza topped with a vibrant assortment of roasted vegetables, artisanal cheeses, and a drizzle of balsamic glaze.",
-    price: "R319",
+    price: "R169",
     side: "left"
   },
   {
     picsrc: item8,
     name: "Decadent Chocolate Lava Cake",
     info: "A rich, warm chocolate cake with a molten center, paired with a scoop of vanilla bean ice cream and a raspberry coulis.",
-    price: "R148",
+    price: "R108",
     side: "right"
   }
 ];
@@ -76,6 +76,9 @@ function menu(a){
         header.textContent = 'Menu';
         
   a.appendChild(header)
+  
+  const items = document.createElement('div');
+        items.setAttribute('class', 'items')
   
   for(let i of menuItems){
     
@@ -103,8 +106,10 @@ function menu(a){
     item.appendChild(itemName)
     item.appendChild(itemInfo)
     item.appendChild(itemPrice)
-    a.appendChild(item)
+    items.appendChild(item)
   }
+  
+  a.appendChild(items)
   
 }
 

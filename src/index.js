@@ -3,6 +3,7 @@ import home from './home.js'
 import menu from './menu.js'
 import contact from './contact.js'
 
+
 const restaurantPage = document.getElementById('restaurant-page');
 
 const createHeader = (() => {

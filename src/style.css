@@ -212,7 +212,7 @@ section {
   width: 2.2em;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 880px){
   #home {
     padding: 80px;
     padding-top: 30px;

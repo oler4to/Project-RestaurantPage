@@ -212,41 +212,4 @@ section {
   width: 2.2em;
 }
 
-@media only screen and (min-width: 880px){
-  #home {
-    padding: 80px;
-    padding-top: 30px;
-  }
-  
-  .items {
-    padding: 10px;
-    
-    display: grid;
-    grid-template-columns: repeat(2, 30%);
-    grid-auto-rows: 1fr;
-    justify-content: center;
-    
-    gap: 80px;
-  }
-  
-  .menu-item {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(3, 0.1fr);
-    width: 100%;
-  }
-  
-  .menu-item .item-img[data = 'left']{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  
-  .menu-item .item-img[data = 'right']{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  
-  #contact .about {
-    font-size: 0.4rem;
-  }
-  
-}
+

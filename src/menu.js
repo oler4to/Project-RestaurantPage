@@ -1,38 +1,74 @@
-import img1 from './img/img1.jpg';
-import img2 from './img/img2.jpg';
-import img3 from './img/img3.jpg';
-import img4 from './img/img4.jpg';
+import item1 from './item-images/item1.jpeg';
+import item2 from './item-images/item2.jpeg';
+import item3 from './item-images/item3.jpeg';
+import item4 from './item-images/item4.jpeg';
+import item5 from './item-images/item5.jpeg';
+import item6 from './item-images/item6.jpeg';
+import item7 from './item-images/item7.jpeg';
+import item8 from './item-images/item8.jpeg';
 
+
+// Menu item objects
 const menuItems = [
   {
-    picsrc: img1,
-    name: 'Example',
-    info: "This dish is quite the flavour journey. Ingrediants: blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah ",
-    price: 'R134',
-    side: 'left'
-  }, 
+    picsrc: item1,
+    name: "Seared Scallops with Citrus Risotto",
+    info: "Pan-seared jumbo scallops served atop creamy citrus-infused risotto, garnished with fresh herbs.",
+    price: "R415",
+    side: "left"
+  },
   {
-    picsrc: img2,
-    name: 'Example',
-    info: "This dish is quite the flavour journey. Ingrediants: blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah ",
-    price: 'R134',
-    side: 'right'
-  }, 
+    picsrc: item2,
+    name: "Miso-Glazed Chilean Sea Bass",
+    info: "Grilled Chilean sea bass glazed with savory miso, accompanied by a medley of roasted seasonal vegetables.",
+    price: "R504",
+    side: "right"
+  },
   {
-    picsrc: img3,
-    name: 'Example',
-    info: "This dish is quite the flavour journey. Ingrediants: blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah ",
-    price: 'R134',
-    side: 'left'
-  }, 
+    picsrc: item3,
+    name: "Truffle Mushroom Ravioli",
+    info: "Handcrafted ravioli stuffed with wild mushrooms and drizzled with a luxurious truffle-infused cream sauce, finished with shaved parmesan.",
+    price: "R299",
+    side: "left"
+  },
   {
-    picsrc: img4,
-    name: 'Example',
-    info: "This dish is quite the flavour journey. Ingrediants: blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah ",
-    price: 'R134',
-    side: 'right'
-  }, 
+    picsrc: item4,
+    name: "Moroccan Spiced Lamb Tagine",
+    info: "Tender braised lamb infused with Moroccan spices, served with couscous and a medley of roasted vegetables.",
+    price: "R429",
+    side: "right"
+  },
+  {
+    picsrc: item5,
+    name: "Szechuan Crispy Tofu Stir-Fry",
+    info: "Crispy tofu cubes tossed in a zesty Szechuan sauce with colorful bell peppers, snow peas, and served over fragrant jasmine rice.",
+    price: "R264",
+    side: "left"
+  },
+  {
+    picsrc: item6,
+    name: "Prime Ribeye Steak",
+    info: "A succulent grilled ribeye steak seasoned to perfection, accompanied by garlic mashed potatoes and sautéed spinach.",
+    price: "R525",
+    side: "right"
+  },
+  {
+    picsrc: item7,
+    name: "Gourmet Veggie Pizza",
+    info: "A thin-crust pizza topped with a vibrant assortment of roasted vegetables, artisanal cheeses, and a drizzle of balsamic glaze.",
+    price: "R319",
+    side: "left"
+  },
+  {
+    picsrc: item8,
+    name: "Decadent Chocolate Lava Cake",
+    info: "A rich, warm chocolate cake with a molten center, paired with a scoop of vanilla bean ice cream and a raspberry coulis.",
+    price: "R148",
+    side: "right"
+  }
 ];
+
+
 
 function menu(a){
   const header = document.createElement('span');

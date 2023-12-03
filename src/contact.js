@@ -1,5 +1,10 @@
-import img1 from './img/img1.jpg';
-import img2 from './img/img2.jpg';
+import callImg from './png/call.png';
+import emailImg from './png/email.png';
+import fbImg from './png/facebook.png';
+import instaImg from './png/instagram.png';
+import twtImg from './png/twitter.png';
+import lnkdinImg from './png/linkedin.png';
+
 
 const timeslots = [
   {
@@ -59,26 +64,27 @@ function contact(a){
     const call = document.createElement('span');
           call.setAttribute('class', 'c-call');
           call.innerHTML = `
-          <img class="c-social" src='${img1}'/> 
+          <img class="c-social" src='${callImg}'/> 
           <span>Call</span>`
           
     const email = document.createElement('span');
           email.setAttribute('class', 'c-email');
           email.innerHTML = `
-          <img class="c-social" src='${img2}'/> 
+          <img class="c-social" src='${emailImg}'/> 
           <span>Email</span>`
           
+          
     const fb = new Image();
-          fb.src = img1;
+          fb.src = fbImg;
           fb.setAttribute('class', 'c-social');
     const insta = new Image();
-          insta.src = img2;
+          insta.src = instaImg;
           insta.setAttribute('class', 'c-social');
     const twitter = new Image();
-          twitter.src = img1;
+          twitter.src = twtImg;
           twitter.setAttribute('class', 'c-social');
     const linkedin = new Image();
-          linkedin.src = img2;
+          linkedin.src = lnkdinImg;
           linkedin.setAttribute('class', 'c-social');
     
   contacts.appendChild(call);

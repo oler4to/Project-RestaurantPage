@@ -32,7 +32,17 @@ function contact(a){
         
   const about = document.createElement('span');
         about.setAttribute('class', 'about');
-        about.innerHTML = 'This is a text about us and this website';
+        about.innerHTML = `
+        <p>
+      "Since its inception in 2015, 'Savor Haven' has been a vibrant culinary haven nestled in the heart of our community. Co-founded by Chef Mia Rodriguez and Restaurateur Max Bennett, our restaurant was born from a shared vision to create a dining experience that marries innovation with tradition. Through the years, we've evolved into a cherished destination, drawing inspiration from local produce and global flavors to craft a menu that delights the senses.
+        </p>
+      <p>
+      At 'Savor Haven,' we prioritize quality and sustainability, sourcing fresh, seasonal ingredients from trusted local farmers and artisans. Our commitment to excellence extends beyond the kitchen—our warm and attentive staff ensures each guest feels welcomed and valued. We pride ourselves on creating an inviting atmosphere where friends and families gather to share moments, savor exceptional cuisine, and create lasting memories.
+      </p>
+      <p>
+      Driven by our passion for culinary artistry and community, 'Savor Haven' continues to be a place where every dish tells a story, and every visit leaves a lasting impression. Join us on this gastronomic journey where tradition meets innovation, and every bite is an invitation to indulge in the finest flavors."
+      </p>
+      `;
         
   const header2 = document.createElement('span');
         header2.setAttribute('class', 'tabHead');
@@ -47,7 +57,9 @@ function contact(a){
             timeslot.setAttribute('class', 't-slot');
       
         const day = document.createElement('span');
+              day.classList.add('day')
         const time = document.createElement('span')
+              time.classList.add('time')
         
               day.textContent = t.days;
               time.textContent = t.time;

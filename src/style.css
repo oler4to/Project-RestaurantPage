@@ -1,15 +1,30 @@
-#restaurant-page {
-  background-color: lavender;
+@font-face {
+  font-family: "Momcake";
+  src: url(./font/MomcakePro-Bold.woff) format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Coco-Gothic";
+  src: url('./font/CocoGothic-Regular.woff') format('woff');
+}
+
+body {
+  background-image: linear-gradient(45deg,#000000, #000e1b);
+  
+  color: white;
+  font-family: "Coco-Gothic";
 }
 
 #head {
-  padding: 5px;
+  margin: 5%;
+  padding-bottom: 20px;
   
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  border-bottom: 1px solid;
+  border-bottom: 3px solid #fefefedc;
 }
 
 #navtabs {
@@ -19,18 +34,22 @@
 }
 
 #navtabs span {
+  border-bottom: 2px solid #eaf2cd ;
   padding: 5px;
 }
 
 #head #restaurant-name {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .tabHead, #restaurant-name {
-  font-weight: 800;
-  font-size: 1.6rem;
+  color: #cdf2ec;
+  font-family: "Momcake";
 }
 
+.tabHead {
+  font-size: 2rem;
+}
 #home {
   padding: 10px;
   
@@ -50,26 +69,23 @@
 #menu {
   padding: 10px;
   
-  display: flex;
+  display: none;
   flex-direction: column;
+  align-items: center;
+}
+
+.menu-item{
+  padding: 10px;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto-fill);
   
   gap: 10px;
 }
 
-.menu-item{
-  padding: 5px;
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto-fit);
-  align-items: space-between;
-  
-  column-gap: 10px;
-}
-
 
 .menu-item .item-img{
-  align-self: center;
   width: 100%;
 }
 
@@ -79,11 +95,13 @@
 }
 
 .menu-item .item-img[data = 'right']{
-  grid-column: 2/2;
+  justify-self: end;
+  grid-column: 2/3;
   grid-row: 1/4;
 }
 
 .menu-item .item-name {
+  color: #eaf2cd;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -95,6 +113,7 @@
 
 .menu-item .item-price {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 #contact {
@@ -154,4 +173,37 @@
 
 .contacts .c-social {
   width: 2.2em;
+}
+
+@media only screen and (min-width: 768px){
+  .items {
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    
+    gap: 80px;
+  }
+  
+  .menu-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 0.1fr);
+    width: 100%;
+  }
+  
+  .menu-item .item-img[data = 'left']{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .menu-item .item-img[data = 'right']{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .menu-item span {
+    
+  }
 }

@@ -1,5 +1,5 @@
-import TableImage from './img/table.jpg';
-import WaitressImage from './img/waitress.jpg';
+import TableImage from './home-images/table.jpg';
+import WaitressImage from './home-images/waitress.jpg';
 
 function home(a) {
   const header = document.createElement('span');

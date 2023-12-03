@@ -8,7 +8,10 @@ function home(a) {
         
   const intro = document.createElement('p');
         intro.setAttribute('class', 'para');
-        intro.textContent = 'Welcome to "Savor Haven," where culinary artistry meets a welcoming ambiance. Nestled in the heart of the city, our restaurant offers a fusion of flavors crafted from locally sourced ingredients and inspired by global cuisine.';
+        intro.innerHTML = `
+        <span >Welcome to "Savor Haven"</span> 
+        <br/> Where culinary artistry meets a welcoming ambiance. 
+        <br/> Nestled in the heart of the city, our restaurant offers a fusion of flavors crafted from locally sourced ingredients and inspired by global cuisine.`;
         
   const table = new Image();
         table.src = TableImage;

@@ -1,0 +1,1 @@
+module.exports = "data:image/svg+xml,%3chtml%3e %3chead%3e%3ctitle%3e404 Not Found%3c/title%3e%3c/head%3e %3cbody bgcolor='white'%3e %3ccenter%3e%3ch1%3e404 Not Found%3c/h1%3e%3c/center%3e %3chr%3e%3ccenter%3enginx/1.14.0 (Ubuntu)%3c/center%3e %3c/body%3e %3c/html%3e %3c/svg%3e"

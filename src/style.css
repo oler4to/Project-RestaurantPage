@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: linear-gradient(45deg,#000000, #000e1b);
+  background-image: linear-gradient(45deg,#000000, #06203a);
   
   color: white;
   font-family: "Coco-Gothic";
@@ -48,27 +48,41 @@ body {
 }
 
 .tabHead {
+  
+  align-self: center;
   font-size: 2rem;
 }
+
+section {
+  margin: 5%;
+  padding: 15px;
+  
+  background-color: #00000033;
+  border-radius: 15px;
+}
+
 #home {
-  padding: 10px;
+  padding-top: 5px;
   
   display: none;
   flex-direction: column;
   
-  gap: 5px;
+  gap: 0.6rem;
   
   font-size: 0.7rem;
 }
 
-#home .image {
-  width: 100%;
+#home .para span {
+  font-weight: 400;
+  font-size: 1rem;
 }
 
+#home .image {
+  align-self: center;
+  width: 70%;
+}
 
 #menu {
-  padding: 10px;
-  
   display: none;
   flex-direction: column;
   align-items: center;
@@ -86,6 +100,7 @@ body {
 
 
 .menu-item .item-img{
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -117,28 +132,43 @@ body {
 }
 
 #contact {
-  padding: 20px;
+  padding-bottom: 30px;
   
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   
-  gap: 100px;
+  gap: 20px;
 }
 
-.times {
-  width: 100%;
+#contact .about {
+  padding: 10px;
   
   display: flex;
   flex-direction: column;
   gap: 5px;
+  
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.times {
+  width: 80%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+  font-size: 0.75rem;
 }
 
 .times .t-slot {
-  width: 100%;
-  
   display: flex;
-  justify-content: space-between;
+}
+
+.t-slot span {
+  width: 100%;
+  text-align: center;
 }
 
 .contacts {
@@ -151,7 +181,6 @@ body {
   
   column-gap: 2rem;
   row-gap: 0.8rem;
-  
 }
 
 .contacts > span {
@@ -176,6 +205,11 @@ body {
 }
 
 @media only screen and (min-width: 768px){
+  #home {
+    padding: 80px;
+    padding-top: 30px;
+  }
+  
   .items {
     padding: 10px;
     
@@ -203,7 +237,8 @@ body {
     grid-row: 1/2;
   }
   
-  .menu-item span {
-    
+  #contact .about {
+    font-size: 0.4rem;
   }
+  
 }
